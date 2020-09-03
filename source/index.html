@@ -9,20 +9,33 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav nav">
-        <img class="nav__logo">
-        <ul class="nav__menu">
-          <li class="nav__link">О путешествии</li>
-          <li class="nav__link">Цены</li>
-        </ul>
-        <a class="nav__contacts" href="tel:+749978468446">+7 (499) -784-684-46</a>
-          </nav>
+      <nav class="header__nav nav container">
+        <img class="nav__logo" src="img/logo.svg" width="58" height="22" alt="Путешествие с Way">
+        <div class="nav__navigation">
+            <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__link" href="#">О путешествии</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
+            </ul>
+            <a class="nav__contacts" href="tel:+749978468446">
+                <svg class="nav__tel-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.39635 8.62432C7.31179 7.42623 7.57753 6.24606 8.28114 5.29684C8.89115 4.43632 9.68536 3.96636 10.6426 3.69172C11.4489 3.4525 11.9774 3.74561 12.2099 4.64204C12.5421 5.98224 13.0162 7.3225 13.1884 8.73361C13.2427 9.35485 12.8411 10.2332 12.4062 10.6856C11.3161 11.7589 11.5426 12.5399 12.37 14.1643C12.6267 14.6881 13.0344 15.5934 13.8286 16.7919C14.656 17.9992 15.0939 18.6472 16.1569 18.0975C17.3376 17.5035 18.1983 17.8855 19.0891 18.8444C19.6931 19.5369 20.3574 20.1318 20.9614 20.8243C21.8341 21.8542 21.7949 22.5641 21.1124 23.2915C19.8833 24.6309 17.854 25.0736 16.3441 24.1766C15.5106 23.6881 14.6802 23.0487 14.0188 22.303C11.1047 18.9825 9.00291 15.1212 7.73759 10.7632C7.53526 10.0265 7.44165 9.28104 7.39635 8.62432Z" stroke="#fe8978" stroke-width="2" stroke-miterlimit="10"/>
+                </svg>
+                +7 (499) -784-684-46
+            </a>
+        </div>
+      </nav>
       </header>
       <main class="main">
           <section class="main__intro intro">
-              <h1 class="intro__header">Путешествие по Европе</h1>
-              <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-              <a class="intro__button">Смотреть тур</a>
+              <h1 class="intro__header">Путешествие по&nbspЕвропе</h1>
+              <p class="intro__description">В&nbspэтом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+              <a class="button intro__button">
+                  Смотреть тур
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </a>
           </section>
           <section class="main__places-cards places-cards">
               <h2 class="places-cards__header">Места посещения</h2>
@@ -49,7 +62,7 @@
                   <li class="tabs-contents__item country">
                       <h2 class="country__header">Греция</h2>
                       <p class="country__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-                      <img class="country__img">
+                      <img class="country__img" src="img/Greece-Card-Desktop.jpg">
                       <a class="country__buy-button">Купить тур сейчас</a>
                       <div class="country__review-block review">
                           <h3 class="review__header">Отзывы</h3>
@@ -129,7 +142,7 @@
                       <li class="price-block__feature">Завтраки, ужины в отелях и ланчи на природе</li>
                       <li class="price-block__feature">Экскурсии по удивительно красивым местам Европы</li>
                   </ul>
-                  <a class="price-block__button">Купить тур сейчас</a>
+                  <a class="button price-block__button">Купить тур сейчас</a>
               </div>
               <div class="prices__block price-block">
                   <p class="price-block__header">Экономный</p>
@@ -142,7 +155,7 @@
                       <li class="price-block__feature">Только завтраки в отелях</li>
                       <li class="price-block__feature">Экскурсии по удивительно красивым местам Европы</li>
                   </ul>
-                  <a class="price-block__button">Купить тур сейчас</a>
+                  <a class="button price-block__button">Купить тур сейчас</a>
               </div>
               <div class="prices__block price-text">
                   <h2 class="price-text__header">Цены</h2>

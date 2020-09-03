@@ -1,12 +1,18 @@
 // Цвета
 $primary-text: rgba(44, 46, 63, 0.7);
 $white: #ffffff;
+$accent: #fe7865;
+// $icon-accent: #fe8978;
+$accent-hover: #f17d4b;
+$links: #141517;
+$light-bg: #f8f8f8;
 
 
 // Размеры
-// $width-mobile: 320px;
-// $width-tablet: 768px;
-$width-desktop: 1170px;
+$width-desktop-max: 1230px;
+$width-desktop-min: 1024px;
+$width-tablet: 768px;
+$width-mobile: 320px;
 // $mobile-width-only: 767px;
 // $tablet-width-only: 1149px;
 

@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.nav__navigation {
+  display: flex;
+}
+
+.nav__logo {
+  width: 58px;
+  height: 22px;
+}
+
+.nav__menu {
+  @include list-reset;
+  display: flex;
+}
+
+.nav__link,
+.nav__contacts {
+  @include link-reset;
+
+  color: $links;
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.nav__contacts {
+  display: flex;
+  padding-left: 53px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.nav__tel-icon {
+  padding-right: 9px;
+}
