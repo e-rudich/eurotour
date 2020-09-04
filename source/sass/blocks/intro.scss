@@ -1,9 +1,11 @@
 .intro {
   background-image: url("../img/intro-bg.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: 50% 0;
   background-color: $light-bg;
   background-repeat: no-repeat;
   min-height: 860px;
+  margin-bottom: 200px;
 }
 
 .intro__header {
@@ -13,8 +15,9 @@
   letter-spacing: -1.10667px;
   color: $white;
   margin: 0;
-  margin-left: 55.9%;
-  padding-top: 185px;
+  margin-left: 59.5%;
+  margin-bottom: 27px;
+  padding-top: 187px;
   max-width: 500px;
 }
 
@@ -23,8 +26,8 @@
   line-height: 170%;
   font-weight: 400;
   color: $white;
-  margin-left: 56%;
-  margin-bottom: 30px;
+  margin-left: 59.5%;
+  margin-bottom: 34px;
   max-width: 370px;
 }
 
@@ -33,7 +36,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   max-width: 340px;
-  margin-left: 56%;
-  padding-left: 43px;
-  padding-right: 37px;
+  margin-left: 59.5%;
+  padding-left: 40px;
+  padding-right: 40px;
 }

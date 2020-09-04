@@ -6,6 +6,31 @@
     <title>Евротрип</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/Montserrat.woff2" as="font">
+
+    <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url("img/320.png");
+  }
+  /* Tablet */
+  @media (min-width: 768px) {
+    HTML {
+      background-image: url("img/768.png");
+    }
+  }
+  /* Desktop */
+  @media (min-width: 1024px) {
+    HTML {
+      background-image: url("img/1170.png");
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+<script src="https://yoksel.github.io/pixel-glass-js/script.js" ></script>
+<!-- // Pixel Glass -->
+
   </head>
   <body>
     <header class="header">
@@ -34,10 +59,10 @@
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                    
+                  </svg>
                 </a>
           </section>
-          <section class="main__places-cards places-cards">
+          <section class="main__places-cards places-cards container">
               <h2 class="places-cards__header">Места посещения</h2>
               <p class="places-cards__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
               <ul class="places-cards__cards-list cards">
