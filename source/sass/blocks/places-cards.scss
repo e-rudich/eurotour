@@ -1,8 +1,45 @@
 .places-cards__header {
+  position: relative;
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
   letter-spacing: -1.245px;
   color: $dark-headers;
   max-width: 500px;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 229px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $accent;
+
+    @media (max-width: $width-tablet-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $width-tablet-max) {
+    font-size: 30px;
+    line-height: 150%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.places-cards__description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.46px;
+  margin: 0;
+  margin-bottom: 55px;
+  max-width: 350px;
+}
+
+.places-cards__cards-list {
+  @include list-reset;
 }

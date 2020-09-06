@@ -1,21 +1,26 @@
 // Цвета
+$dark-headers: rgba(44, 46, 63, 1);
 $primary-text: rgba(44, 46, 63, 0.7);
+$elements: rgba(44, 46, 63, 0.5);
+$small-text: rgba(20, 21, 23, 0.5);
+$primary-text-30: rgba(44, 46, 63, 0.3);
 $white: #ffffff;
 $accent: #fe7865;
 // $icon-accent: #fe8978;
 $accent-hover: #f17d4b;
 $links: #141517;
-$dark-headers: #2c2e3f;
-$light-bg: #f8f8f8;
+$light-bg: #fbf8f8;
+$border: #d7d9df;
+$black: #000000;
 
 
 // Размеры
 $width-desktop-max: 1210px;
 $width-desktop: 1024px;
+$width-tablet-max: 1023px;
 $width-tablet: 768px;
+$width-mobile-max: 767px;
 $width-mobile: 320px;
-// $mobile-width-only: 767px;
-// $tablet-width-only: 1149px;
 
 // Разрешение
 // $retina-dpi: 144dpi;

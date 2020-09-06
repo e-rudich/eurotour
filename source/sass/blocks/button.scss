@@ -11,9 +11,10 @@
   text-transform: uppercase;
 
   padding: 30px;
-  //   min-width: 310px;
+  transition: 0.35s;
+
   &:hover {
     background-color: $accent-hover;
-    transition: 0.35s transform;
+    transition: 0.35s;
   }
 }

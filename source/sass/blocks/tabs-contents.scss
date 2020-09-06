@@ -1,0 +1,9 @@
+.tabs-contents {
+  background-image: url("../img/Map-bg.svg");
+  z-index: -10;
+  position: relative;
+}
+
+.tabs-contents__list {
+  @include list-reset;
+}

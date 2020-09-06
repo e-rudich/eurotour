@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-column {
+  width: 33.3%;
+}
+
+.footer-column:not(:last-child) {
+  border-right: 1px solid $border;
+}
+
+.footer-column__header {
+  color: $links;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.footer-column__list {
+  @include list-reset;
+}
+
+.footer-column__contact-list {
+  @include list-reset;
+}
+
+.footer-column__text {
+  font-size: 14px;
+  line-height: 170%;
+  color: $small-text;
+}
+
+.contacts__item {
+  @include link-reset;
+
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $accent;
+}

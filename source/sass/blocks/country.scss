@@ -1,0 +1,52 @@
+.country {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.country__intro-block {
+  width: 425px;
+  margin-right: 100px;
+}
+
+.country__header {
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  color: $dark-headers;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $accent;
+  }
+}
+
+.country__description {
+  max-width: 370px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+}
+
+.country__img {
+  display: block;
+  // width: 430px;
+  // height: auto;
+}
+
+.country__buy-button {
+  @include link-reset;
+
+  display: block;
+  max-width: 250px;
+}
