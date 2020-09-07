@@ -1,0 +1,20 @@
+.contacts__item {
+  margin-bottom: 25px;
+}
+
+.contacts__link {
+  @include link-reset;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $accent;
+}
+
+.contacts__icon {
+  padding-right: 15px;
+}

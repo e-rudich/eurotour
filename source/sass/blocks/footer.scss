@@ -5,6 +5,7 @@
 
 .footer-column {
   width: 33.3%;
+  box-sizing: border-box;
 }
 
 .footer-column:not(:last-child) {
@@ -22,8 +23,22 @@
   @include list-reset;
 }
 
+.footer-column__directions {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
 .footer-column__contact-list {
   @include list-reset;
+}
+
+.footer-column--contacts {
+  padding-left: 90px;
+}
+
+.footer-column--corporate {
+  padding-left: 49px;
 }
 
 .footer-column__text {
@@ -32,12 +47,9 @@
   color: $small-text;
 }
 
-.contacts__item {
-  @include link-reset;
-
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
-  text-decoration: underline;
-  color: $accent;
+.footer-column__list-item {
+  font-size: 14px;
+  line-height: 17px;
+  color: $small-text;
+  padding-bottom: 10px;
 }

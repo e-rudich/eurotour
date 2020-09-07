@@ -6,11 +6,17 @@
 
 .cards__item {
   margin-bottom: 99px;
+  margin-right: 30px;
+
+  @media (max-width: $width-desktop-max) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
 }
 
-.cards__item:not(:nth-child(3n+3)):not(:last-child) {
-  margin-right: 60px;
-}
+// .cards__item:not(:nth-child(3n+3)):not(:last-child) {
+//   margin-right: 60px;
+// }
 
 .card__view-button {
   display: none;
@@ -52,12 +58,19 @@
   &:hover .card__view-button {
     display: block;
   }
+
+  @media (max-width: $width-tablet-max) {
+    width: 288px;
+    height: 425px;
+  }
 }
 
 .cards__img {
   width: 100%;
   position: absolute;
   transition: 0.35s;
+  top: 0;
+  left: 0;
 }
 
 .card__title {

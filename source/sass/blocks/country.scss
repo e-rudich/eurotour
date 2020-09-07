@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 200px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .country__intro-block {
@@ -40,8 +44,6 @@
 
 .country__img {
   display: block;
-  // width: 430px;
-  // height: auto;
 }
 
 .country__buy-button {
@@ -49,4 +51,12 @@
 
   display: block;
   max-width: 250px;
+}
+
+// .country--hidden {
+//   display: none;
+// }
+
+.country--active {
+  display: flex;
 }

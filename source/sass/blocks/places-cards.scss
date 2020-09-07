@@ -1,3 +1,9 @@
+.places-cards {
+  @media (max-width: $width-tablet-max) {
+    margin-bottom: 98px;
+  }
+}
+
 .places-cards__header {
   position: relative;
   font-size: 55px;
@@ -28,6 +34,7 @@
     line-height: 150%;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 22px;
   }
 }
 
@@ -38,6 +45,11 @@
   margin: 0;
   margin-bottom: 55px;
   max-width: 350px;
+
+  @media (max-width: $width-tablet-max) {
+    margin: 0 auto 38px;
+    text-align: center;
+  }
 }
 
 .places-cards__cards-list {

@@ -3,16 +3,22 @@
   justify-content: space-between;
   align-items: center;
   min-height: 99px;
+  max-width: $width-desktop-max;
 
   @media (max-width: $width-tablet-max) {
     min-height: 50px;
     position: relative;
+    display: block;
   }
 }
 
 .nav__navigation {
   display: flex;
   padding-right: 17px;
+
+  @media (max-width: $width-tablet-max) {
+    padding-right: 0;
+  }
 }
 
 .nav__logo {
@@ -22,6 +28,8 @@
   @media (max-width: $width-tablet-max) {
     width: 44px;
     height: 17px;
+    padding-top: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -33,11 +41,9 @@
     // position: fixed;
     // display: block;
     flex-direction: column;
-    right: 0;
-    top: 0;
     width: 100%;
-    height: 30vh;
-    padding-top: 135px;
+    height: 25vh;
+    padding-top: 50px;
     background-color: $white;
   }
 }
@@ -45,7 +51,6 @@
 .nav__item {
   @media (max-width: $width-tablet-max) {
     background-color: $light-bg;
-    padding: 17px 16px;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -81,11 +86,15 @@
 
   @media (max-width: $width-tablet-max) {
     // display: none;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     font-size: 20px;
     line-height: 140%;
     font-weight: 600;
+    width: 100%;
+    padding: 17px 20px 17px 16px;
   }
 }
 

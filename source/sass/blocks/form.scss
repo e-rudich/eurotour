@@ -1,0 +1,78 @@
+.form {
+  // background-image: url("../img/form-desktop.jpg");
+  // background-size: 844px 455px;
+  // background-position: 0 0;
+  // background-repeat: no-repeat;
+  width: 656px;
+  box-shadow: 0 4px 30px $primary-text-10;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 170px;
+}
+
+.form__header {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form__input {
+  border: 1px solid $primary-text-30;
+  padding: 15px;
+  box-sizing: border-box;
+  min-width: 269px;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $links;
+  }
+}
+
+.form__input--required {
+  position: relative;
+
+  &::before {
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    content: "*";
+    color: $accent;
+    font-weight: 400;
+    top: 10px;
+    left: 15px;
+  }
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: none;
+  text-align: center;
+  padding: 18px;
+
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+
+  min-width: 176px;
+}

@@ -4,6 +4,7 @@ $primary-text: rgba(44, 46, 63, 0.7);
 $elements: rgba(44, 46, 63, 0.5);
 $small-text: rgba(20, 21, 23, 0.5);
 $primary-text-30: rgba(44, 46, 63, 0.3);
+$primary-text-10: rgba(41, 54, 66, 0.1);
 $white: #ffffff;
 $accent: #fe7865;
 // $icon-accent: #fe8978;
@@ -15,7 +16,7 @@ $black: #000000;
 
 
 // Размеры
-$width-desktop-max: 1210px;
+$width-desktop-max: 1230px;
 $width-desktop: 1024px;
 $width-tablet-max: 1023px;
 $width-tablet: 768px;
@@ -23,8 +24,8 @@ $width-mobile-max: 767px;
 $width-mobile: 320px;
 
 // Разрешение
-// $retina-dpi: 144dpi;
-// $retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 // Шрифты
 $default-font: "Montserrat", "Arial", sans-serif;

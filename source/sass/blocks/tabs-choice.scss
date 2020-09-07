@@ -6,6 +6,10 @@
   @include list-reset;
 
   display: flex;
+
+  @media (max-width: $width-desktop-max) {
+    overflow: hidden;
+  }
 }
 
 .tab-items__item {
