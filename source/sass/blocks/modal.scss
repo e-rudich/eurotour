@@ -1,0 +1,16 @@
+.modal {
+  width: 728px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.modal__img {
+  width: 338px;
+  height: 444px;
+}
+
+.modal__interact {
+  background-color: $light-bg;
+  display: flex;
+  flex-direction: column;
+}

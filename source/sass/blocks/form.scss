@@ -1,16 +1,31 @@
-.form {
-  // background-image: url("../img/form-desktop.jpg");
-  // background-size: 844px 455px;
-  // background-position: 0 0;
-  // background-repeat: no-repeat;
-  width: 656px;
-  box-shadow: 0 4px 30px $primary-text-10;
-  padding: 50px;
-  box-sizing: border-box;
-  margin-bottom: 170px;
+.form-section {
+  width: 100%;
+  margin-bottom: 85px;
+  padding-left: 33px;
 }
 
-.form__header {
+.form-section__wrapper {
+  width: 844px;
+  height: 455px;
+  background-image: url("../img/form-desktop.jpg");
+  background-size: 844px 455px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 70px;
+}
+
+.form-section__form {
+  box-shadow: 0 4px 30px $primary-text-10;
+  padding: 50px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 5px;
+  width: 656px;
+  transform: translateX(78%);
+}
+
+.form-section__header {
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
@@ -18,7 +33,7 @@
   margin-bottom: 12px;
 }
 
-.form__text {
+.form-section__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -27,13 +42,13 @@
   margin-bottom: 23px;
 }
 
-.form__inputs {
+.form-section__inputs {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.form__input {
+.form-section__input {
   border: 1px solid $primary-text-30;
   padding: 15px;
   box-sizing: border-box;
@@ -46,7 +61,7 @@
   }
 }
 
-.form__input--required {
+.form-section__input--required {
   position: relative;
 
   &::before {
@@ -61,7 +76,7 @@
   }
 }
 
-.form__button {
+.form-section__button {
   display: block;
   margin: 0 auto;
   left: 0;

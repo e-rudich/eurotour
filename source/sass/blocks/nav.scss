@@ -85,7 +85,6 @@
   }
 
   @media (max-width: $width-tablet-max) {
-    // display: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,6 +94,10 @@
     font-weight: 600;
     width: 100%;
     padding: 17px 20px 17px 16px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    padding-right: 30px;
   }
 }
 

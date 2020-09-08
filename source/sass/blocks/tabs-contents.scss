@@ -2,8 +2,12 @@
   background-image: url("../img/Map-bg.svg");
   z-index: -10;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center 25%;
 }
 
 .tabs-contents__list {
   @include list-reset;
+
+  margin-bottom: 230px;
 }

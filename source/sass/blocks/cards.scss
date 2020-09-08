@@ -7,11 +7,10 @@
 .cards__item {
   margin-bottom: 99px;
   margin-right: 30px;
-
-  @media (max-width: $width-desktop-max) {
-    margin-right: 30px;
-    margin-bottom: 20px;
-  }
+  //   @media (max-width: $width-desktop-max) {
+  //     margin-right: 30px;
+  //     margin-bottom: 20px;
+  //   }
 }
 
 // .cards__item:not(:nth-child(3n+3)):not(:last-child) {

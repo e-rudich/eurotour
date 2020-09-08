@@ -1,11 +1,15 @@
 .intro {
-  background-image: url("../img/intro-bg.jpg");
+  background-image: url("../img/intro-bg-desktop@1x.jpg");
   background-size: cover;
   background-position: 50% 0;
   background-color: $light-bg;
   background-repeat: no-repeat;
   min-height: 860px;
   margin-bottom: 200px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro-bg-desktop@2x.jpg");
+  }
 
   @media (max-width: $width-tablet-max) {
     min-height: 344px;
@@ -14,6 +18,12 @@
 
   @media (max-width: $width-mobile-max) {
     min-height: 235px;
+    background-size: 320px 235px;
+    background-image: url("../img/intro-bg-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-bg-mobile@2x.jpg");
+    }
   }
 }
 
@@ -40,6 +50,11 @@
 
   @media (max-width: $width-mobile-max) {
     font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    max-width: 280px;
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
 }
 
@@ -57,6 +72,11 @@
     text-align: center;
     max-width: 420px;
     // margin-bottom: 15px;
+  }
+
+  @media (max-width: $width-mobile-max) {
+    font-size: 16px;
+    line-height: 170%;
   }
 }
 

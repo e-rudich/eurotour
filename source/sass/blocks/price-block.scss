@@ -99,3 +99,8 @@
     // top: 0;
   }
 }
+
+.price-block__button {
+  @include link-reset;
+  margin-top: auto;
+}

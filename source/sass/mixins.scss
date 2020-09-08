@@ -6,54 +6,5 @@
 
 @mixin link-reset {
   text-decoration: none;
+  cursor: pointer;
 }
-
-// @mixin fieldset-reset {
-//   border: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// @mixin header-size {
-//   font-size: 25px;
-//   line-height: 30px;
-//   font-weight: bold;
-// }
-
-// @mixin header-size-tablet {
-//   font-size: 43px;
-//   line-height: 50px;
-//   font-weight: bold;
-// }
-
-// @mixin header-size-desktop {
-//   font-size: 53px;
-//   line-height: 57px;
-//   font-weight: bold;
-// }
-
-// @mixin inner-page-header {
-//   font-size: 27px;
-//   line-height: 30px;
-//   font-weight: bold;
-//   text-align: center;
-//   padding: 74px 0;
-// }
-
-// @mixin inner-page-header-tablet {
-//   font-size: 43px;
-//   line-height: 50px;
-//   font-weight: bold;
-//   text-align: center;
-//   padding: 95px 0 90px;
-//   margin: 0;
-// }
-
-// @mixin inner-page-header-desktop {
-//   font-size: 53px;
-//   line-height: 57px;
-//   font-weight: bold;
-//   text-align: center;
-//   padding: 94px 0 105px;
-//   margin: 0;
-// }

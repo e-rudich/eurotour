@@ -17,6 +17,7 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 600;
+  margin-bottom: 23px;
 }
 
 .footer-column__list {
@@ -48,8 +49,13 @@
 }
 
 .footer-column__list-item {
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 17px;
+}
+
+.footer-column__list-link {
+  @include link-reset;
+
   color: $small-text;
-  padding-bottom: 10px;
 }
