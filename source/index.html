@@ -54,11 +54,6 @@
                     <g clip-path="url(#clip0)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
                     </g>
-                    <defs>
-                    <clipPath id="clip0">
-                    <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)"/>
-                    </clipPath>
-                    </defs>
                   </svg>
                 </a>
               </li>
@@ -68,11 +63,6 @@
                     <g clip-path="url(#clip0)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
                     </g>
-                    <defs>
-                    <clipPath id="clip0">
-                    <rect width="12" height="7.4" fill="white" transform="translate(0 12) rotate(-90)"/>
-                    </clipPath>
-                    </defs>
                   </svg>
                 </a>
               </li>
@@ -88,8 +78,8 @@
       </header>
       <main class="main">
           <section class="main__intro intro">
-              <h1 class="intro__header">Путешествие по&nbspЕвропе</h1>
-              <p class="intro__description">В&nbspэтом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+              <h1 class="intro__header">Путешествие по&nbsp;Европе</h1>
+              <p class="intro__description">В&nbsp;этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
               <a class="button intro__button" href="#places" aria-label="Перейти к выбору тура">
                   Смотреть тур
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,6 +182,7 @@
                 </ul>
           </section>
           <section class="main__places-tabs tabs-choice container" id="places">
+            <h2 class="visually-hidden">Выбор страны</h2>
               <ul class="tabs-choice__tabs-list tab-items">
                   <li class="tab-items__item"><a class="tab-items__link tab-items__link--active" href="#">Греция</a></li>
                   <li class="tab-items__item"><a class="tab-items__link" href="#">Албания</a></li>
@@ -481,16 +472,8 @@
 
       <div class="modal no-js">
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)"
-          srcset="img/croatia-tab-mobile@1x.jpg 1x, img/croatia-tab-mobile@2x.jpg 2x"> -->
-          <!-- <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/croatia-tab-tablet@1x.webp 1x, img/croatia-tab-tablet@2x.webp 2x"> -->
           <source type="image/webp"
             srcset="img/pic-form-desktop@1x.webp 1x, img/pic-form-desktop@2x.webp 2x">
-          <!-- <source media="(max-width: 767px)"
-          srcset="img/croatia-tab-mobile@1x.jpg 1x, img/croatia-tab-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)"
-            srcset="img/croatia-tab-tablet@1x.jpg 1x, img/croatia-tab-tablet@2x.jpg 2x"> -->
           <img class="modal__img" src="img/pic-form-desktop@1x.jpg"
             srcset="img/pic-form-desktop@2x.jpg 2x" width="338" height="444"
             alt="Путешествие">
@@ -500,10 +483,10 @@
             <h2 class="modal-form__header">Купить тур</h2>
             <div class="modal-form__inputs">
               <label class="modal-form__label">
-                <input class="modal-form__input modal-form__input--required" name="phone" id="phone" type="tel" placeholder="Введите 10 цифр номера" required>
+                <input class="modal-form__input modal-form__input--required" name="phone" id="phone-modal" type="tel" placeholder="Введите 10 цифр номера" required>
               </label>
               <label class="modal-form__label">
-                <input class="modal-form__input" name="email" id="email" type="email" placeholder="E-mail">
+                <input class="modal-form__input" name="email" id="email-modal" type="email" placeholder="E-mail">
               </label>
             </div>
             <button type="submit" class="button modal-form__button">отправить</button>
